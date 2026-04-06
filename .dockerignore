@@ -1,0 +1,7 @@
+nginx.conf
+Dockerfile
+.dockerignore
+.git
+.gitignore
+composer.lock
+vendor
