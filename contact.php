@@ -37,13 +37,14 @@ if ($_POST) {
         try {
             $mail->isSMTP();
             $mail->SMTPAuth   = true;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Host     = $_ENV['SMTP_HOST'];
             $mail->Username = $_ENV['SMTP_USER'];
             $mail->Password = $_ENV['SMTP_PASS'];
             $mail->Port     = $_ENV['SMTP_PORT'];
 
-            $mail->setFrom($email, "$fname $lname");
+            $mail->setFrom($_ENV['SMTP_USER'], 'Portfolio Contact Form');
+            $mail->addReplyTo($email, "$fname $lname");
             $mail->addAddress($_ENV['SMTP_USER']);
             $mail->Subject = $subject;
             $mail->Body    = $content;
