@@ -40,6 +40,8 @@ if ($_POST) {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
+            $mail->SMTPDebug = 2;
+            $mail->Debugoutput = 'error_log';
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Host = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST');
