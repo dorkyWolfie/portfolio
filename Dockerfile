@@ -7,8 +7,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- \
 
 COPY . /app/
 
-# Write the full nginx config to the main config file
-RUN cat > /etc/nginx/nginx.conf <<'EOF'
+RUN cat > /etc/nginx/nginx.conf <<'NGINXEOF'
 worker_processes auto;
 error_log /var/log/nginx/error.log;
 pid /run/nginx.pid;
@@ -38,12 +37,12 @@ http {
         }
     }
 }
-EOF
+NGINXEOF
 
 WORKDIR /app
 RUN composer install --no-dev --optimize-autoloader
-RUN chown -R www-data:www-data /app
 RUN chmod -R 755 /app
+RUN chown -R nobody:nobody /app
 
 EXPOSE 80
 
