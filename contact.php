@@ -1,9 +1,5 @@
 <?php 
 
-error_log('HOST: ' . ($_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST') ?? 'MISSING'));
-error_log('USER: ' . ($_ENV['SMTP_USER'] ?? getenv('SMTP_USER') ?? 'MISSING'));
-error_log('PASS: ' . ($_ENV['SMTP_PASS'] ?? getenv('SMTP_PASS') ? 'SET' : 'MISSING'));
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -40,8 +36,6 @@ if ($_POST) {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->SMTPDebug = 2;
-            $mail->Debugoutput = 'error_log';
             $mail->SMTPAuth = true;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Host = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST');
@@ -84,11 +78,27 @@ if ($_POST) {
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMC97SWS"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMC97SWS"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
+    <!-- End Google Tag Manager (noscript) -->
+        <header>
+      <a href="/">Sandra Radeska</a>
+      <nav>
+        <a href="/#projects">Work</a>
+        <a href="/#tools">Tools</a>
+        <a href="/contact.php">Contact</a>
+        <a download="cvSandraRadeska.pdf" href="./img/cvSandraRadeska.pdf" target="_blank" rel="nofollow"><img src="./img/icons/download.svg" alt="" style="width: 1.1rem; padding-right: .3rem;">CV</a>
+        <a href="https://www.linkedin.com/in/sandra-radeska-93aa46243/" target="_blank">
+          <img src="./img/icons/linkedin.svg" alt="icon linkedin" class="icon">
+        </a>
+      </nav>
+    </header>
+    <main>
     <div class="container">
-        <h1>Get in touch!</h1>
+        <section class="contact-hero">
+                <h1>Contact</h1>
+                <p>Hey, thanks for visiting. I hope you like some of my work. <br/>Anyways, send me a message so we can talk.</p>
+            </section>
         <div id="error"><?php echo $error . $successMessage; ?></div>
         <form method="post">
             <fieldset class="form-group first-label">
@@ -113,10 +123,14 @@ if ($_POST) {
                 <label for="content">Message</label>
                 <textarea class="form-input" id="content" name="content" rows="3"><?php echo $content; ?></textarea>
             </fieldset>
-            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" id="submit" class="button-1">Submit</button>
         </form>
     </div>
-
+</main>
+<footer>
+      <span>© Sandra Radeska 2025</span>
+      <a style="display: none;" href="https://github.com/xandemon/developer-icons?tab=MIT-1-ov-files">Icons</a>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $("form").submit(function (e) {

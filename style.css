@@ -12,6 +12,10 @@ body {
   --secondary-color: #86ceed;
   --accent-color: #3ac2fc;
   --background-color: #ECF6FA;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
 }
 
 section {
@@ -245,6 +249,7 @@ footer {
 
 .pop-title > div {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   background: white;
@@ -275,9 +280,9 @@ footer {
 }
 
 #close {
-  position: fixed;
-  top: 70px;
-  right: 45px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 @media screen and (max-width: 900px) {
@@ -317,7 +322,7 @@ form {
 }
 }
 
-form div {
+form .form-group {
   display: flex;
   flex-direction: column;
 }
