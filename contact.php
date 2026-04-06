@@ -37,7 +37,7 @@ if ($_POST) {
         try {
             $mail->isSMTP();
             $mail->SMTPAuth   = true;
-            $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Host     = $_ENV['SMTP_HOST'];
             $mail->Username = $_ENV['SMTP_USER'];
             $mail->Password = $_ENV['SMTP_PASS'];
