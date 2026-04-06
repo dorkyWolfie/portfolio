@@ -1,5 +1,9 @@
 <?php 
 
+error_log('HOST: ' . ($_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST') ?? 'MISSING'));
+error_log('USER: ' . ($_ENV['SMTP_USER'] ?? getenv('SMTP_USER') ?? 'MISSING'));
+error_log('PASS: ' . ($_ENV['SMTP_PASS'] ?? getenv('SMTP_PASS') ? 'SET' : 'MISSING'));
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
@@ -36,12 +40,12 @@ if ($_POST) {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->SMTPAuth   = true;
+            $mail->SMTPAuth = true;
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-            $mail->Host     = $_ENV['SMTP_HOST'];
-            $mail->Username = $_ENV['SMTP_USER'];
-            $mail->Password = $_ENV['SMTP_PASS'];
-            $mail->Port     = $_ENV['SMTP_PORT'];
+            $mail->Host = $_ENV['SMTP_HOST'] ?? getenv('SMTP_HOST');
+            $mail->Username = $_ENV['SMTP_USER'] ?? getenv('SMTP_USER');
+            $mail->Password = $_ENV['SMTP_PASS'] ?? getenv('SMTP_PASS');
+            $mail->Port = $_ENV['SMTP_PORT'] ?? getenv('SMTP_PORT');
 
             $mail->setFrom($_ENV['SMTP_USER'], 'Portfolio Contact Form');
             $mail->addReplyTo($email, "$fname $lname");
