@@ -5,8 +5,8 @@ RUN apk add --no-cache nginx curl unzip
 RUN curl -sS https://getcomposer.org/installer | php -- \
     --install-dir=/usr/local/bin --filename=composer
 
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY . /app/
-COPY nginx.conf /etc/nginx/http.d/default.conf
 
 WORKDIR /app
 RUN composer install --no-dev --optimize-autoloader
