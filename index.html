@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./popup.js"></script>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PMC97SWS');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css">
+    <link type="image/svg" sizes="40x40" rel="icon" href="./img/icons/developer-icons.svg">
+    <title>Sandra Radeska's Portfolio</title>
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMC97SWS"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+      <a href="/">Sandra Radeska</a>
+      <nav>
+        <a href="/#projects">Work</a>
+        <a href="/#tools">Tools</a>
+        <a href="/contact.php">Contact</a>
+        <a download="cvSandraRadeska.pdf" href="./img/cvSandraRadeska.pdf" target="_blank" rel="nofollow"><img src="./img/icons/download.svg" alt="" style="width: 1.1rem; padding-right: .3rem;">CV</a>
+        <a href="https://www.linkedin.com/in/sandra-radeska-93aa46243/" target="_blank">
+          <img src="./img/icons/linkedin.svg" alt="icon linkedin" class="icon">
+        </a>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div>
+          <h1>Designs That Tell Stories<br />(and Look Good Doing It)</h1>
+          <div class="buttons">
+            <button class="button-1"><a href="/#projects">See my work</a></button>
+            <button class="button-2"><a href="/contact">Get in touch</a></button>
+          </div>
+        </div>
+        <p>I’m <strong>Sandra Radeska</strong> — a designer that mixes graphic design and web development to craft visuals and interfaces. I believe every pixel should pull its weight, and my job is to make them work together (with just the right dose of personality).</p>
+      </section>
+      <!-- PORTFOLIO -->
+      <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <!-- PROJECT 1 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/konekta.png" alt="Project 1" />
+            <div class="text">
+              <h3>Konekta - Landing Page, App, Visual Identity</h3>
+              <span>Tech Stack: Next.js, Node.js, NextAuth.js, Tailwind CSS, MongoDB, Adobe Illustrator & Photoshop</span>
+              <div>
+                <button class="button-1"><a target="_blank" href="https://konekta.mk">Live Preview</a></button>
+                <button class="button-2"><a target="_blank" href="https://github.com/dorkyWolfie/konekta-app">View Code</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 2 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/dojodots.png" alt="Project 1" />
+            <div class="text">
+              <h3>Dojo Dots - Landing Page & Visual Identity</h3>
+              <span>Tech Stack: WordPress, Elementor, Yoast SEO, Custom HTML & CSS, Adobe Illustrator</span>
+              <div>
+                <button class="button-1"><a target="_blank" href="https://dojodots.com">Live Preview</a></button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 3 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-1.webp" alt="Project 1" />
+            <div class="text">
+              <h3>National Parks R. Macedonia - Landing Page & Visual Identity</h3>
+              <span>Tech Stack: HTML, CSS, JavaScript, Adobe Illustrator</span>
+              <div>
+                <button class="button-1"><a target="_blank" href="https://nationalparks.mk">Live Preview</a></button>
+                <button class="button-2"><a target="_blank" href="https://github.com/dorkyWolfie/national-parks-macedonia">View Code</a></button>
+              </div>
+              <button class="button-1" onclick="openPopup('popup1')">View Project</button>
+            </div>
+          </div>
+          <!-- PROJECT 4 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-12-1.webp" alt="Project 1" />
+            <div class="text">
+              <h3>Extra Shop MK - Ecommerce & Social Media</h3>
+              <span>Tech Stack: WordPress, Yoast SEO, WooCommerce, Adobe Photoshop, Premiere Pro</span>
+              <div>
+                <button class="button-1"><a target="_blank" href="https://extrashopmk.com/">Live Preview</a></button>
+                <button class="button-2" onclick="openPopup('popup10')">View Project</button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 5 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-8.webp" alt="Project 1" />
+            <div class="text">
+              <h3>Social Media, Poster & Mobile Game Design</h3>
+              <span>Tech Stack: Adobe Illustrator, Adobe Photoshop, Blender</span>
+              <div>
+                <button class="button-1" onclick="openPopup('popup8')">View Project</button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 6 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-4.jpg" alt="Project 1" />
+            <div class="text">
+              <h3>Book About Skopje - Cover & Layout Design</h3>
+              <span>Tech Stack: Corel Draw, Adobe InDesign</span>
+              <div>
+                <button class="button-1" onclick="openPopup('popup4')">View Project</button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 7 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-5.jpg" alt="Project 1" />
+            <div class="text">
+              <h3>Exhibition Book - Cover & Layout Design</h3>
+              <span>Tech Stack: Adobe InDesign, Adobe Photoshop</span>
+              <div>
+                <button class="button-1" onclick="openPopup('popup5')">View Project</button>
+              </div>
+            </div>
+          </div>
+          <!-- PROJECT 8 -->
+          <div class="frame">
+            <div>
+              <div class="box" id="box1"></div>
+              <div class="box" id="box2"></div>
+              <div class="box" id="box3"></div>
+              <div class="box" id="box4"></div>
+            </div>
+            <img src="./img/port-6.webp" alt="Project 1" />
+            <div class="text">
+              <h3>Daily Notebook Planer - Cover, Layout & Illustration Design</h3>
+              <span>Tech Stack: WordPress, Yoast SEO, WooCommerce, Adobe Photoshop, Premier Pro</span>
+              <div>
+                <button class="button-1" onclick="openPopup('popup6')">View Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS & TOOLS -->
+       <section id="tools">
+        <h2>Most Used Tools</h2>
+        <div class="tools" >
+          <img src="./img/icons/css3.svg" alt="">
+          <img src="./img/icons/html5.svg" alt="">
+          <img src="./img/icons/javascript.svg" alt="">
+          <img src="./img/icons/reactjs.svg" alt="">
+          <img src="./img/icons/nextjs.svg" alt="">
+          <img src="./img/icons/nodejs.svg" alt="">
+          <img src="./img/icons/mongodb.svg" alt="">
+          <img src="./img/icons/wordpress.svg" alt="">
+          <img src="./img/icons/social_15466279.png" alt="">
+          <img src="./img/icons/git.svg" alt="">
+          <img src="./img/icons/github-dark.svg" alt="">
+          <img src="./img/icons/figma.svg" alt="">
+          <img src="./img/icons/illustrator_9814096.png" alt="">
+          <img src="./img/icons/indesign.svg" alt="">
+          <img src="./img/icons/photoshop.svg" alt="">
+          <img src="./img/icons/lightroom.svg" alt="">
+          <img src="./img/icons/premiere-pro_9814226.png" alt="">
+        </div>
+       </section>
+       <section class="popups">
+        <!-- POPUP 1 NATIONAL PARKS -->
+        <div class="popup" id="popup1">
+          <div class="pop-title" id="pop1">
+            <div>
+              <h3>NATIONAL PARKS MACEDONIA | WEB DESIGN & DEVELOPMENT</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup1')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                  <ol>
+                    <li>Design: Adobe Photoshop, Figma</li>
+                    <li>Development: HTML5, CSS3, JavaScript</li>
+                  </ol>
+                  <h4>Project Name</h4>
+                  <p>National Parks of Macedonia</p>
+                  <h4>Project Description</h4>
+                  <p>National Parks Macedonia is a project created to promote Macedonian national parks. The idea was to create a website and rank it on Google.</p>
+                  <h4>Job Description</h4>
+                  <ul>
+                    <li>Create a fully functional website with optimized SEO in order to attract traffic from Google search.</li>
+                    <li>Objectives</li>
+                    <ol>
+                      <li>Website Design</li>
+                      <li>Website Development</li>
+                      <li>On-page + Technical SEO</li>
+                    </ol>
+                    <li>Process</li>
+                    <ol>
+                      <li>Research competitors, target group and inspiration</li>
+                      <li>Collect ideas, create sketches</li>
+                      <li>Filter everything (good and bad ideas) and create wireframes</li>
+                      <li>Create designs</li>
+                      <li>Create mockups</li>
+                      <li>Analyze and implement white-hat SEO tactics</li>
+                    </ol>
+                  </ul>
+                  <h4>Results</h4>
+                  <p>The website generated traffic in its first month being live. Increased engagement rate by 22.12%</p>
+                  <h4>Presentation</h4>
+                  <img src="./img/port-1-1.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- POPUP 10 EXTRA -->
+        <div class="popup" id="popup10">
+          <div class="pop-title" id="pop10">
+            <div>
+              <h3>EXTRA SHOP MK | ECOMMERCE & SOCIAL MEDIA</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup10')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                <ol>
+                  <li>Design: Adobe Photoshop, Premiere Pro</li>
+                  <li>Development: WordPress, Yoast SEO</li>
+                </ol>
+                <h4>Brand Name</h4>
+                <p>Extra Shop MK</p>
+                <h4>Brand Description</h4>
+                <p>Extra Shop MK is a new ecommerce brand that wants to be known for selling quality goods at affordable prices.</p>
+                <h4>Job Description</h4>
+                <ul>
+                  <li>Create an ecommerce website that is easy to use, and approchable to younger as well as to older customers.</li>
+                  <li>I worked as a part of a 3 person team. My main objective was to provide a good copy for the products. My sidequests were to find or create and edit photos of the products, find and edit videos of people using the products, test and find any errors or mistakes in the build, create videos with voiceover for social media, manage social media accounts.</li>
+                  <li>Objectives</li>
+                  <ol>
+                    <li>Generate Product Description and Details</li>
+                    <li>Find/Edit Product Photos</li>
+                    <li>Find/Edit Product Videos</li>
+                    <li>Test New Features</li>
+                    <li>Create Voiceover Videos</li>
+                  </ol>
+                </ul>
+                <h4>Results</h4>
+                <p>We managed to go from 0 to more than 50 orders daily in 2-3 months.</p>
+                <h4>Presentation</h4>
+                <video src="./img/port-12-5.webm" autoplay loop muted></video>
+                <video src="./img/port-12-4.webm" autoplay loop muted controls></video>
+              </div>
+            </div>
+          </div>
+      </div>
+        <!-- POPUP 4 BOOK ABOUT SKOPJE -->
+        <div class="popup" id="popup4">
+          <div class="pop-title" id="pop4">
+            <div>
+              <h3>BOOK ABOUT SKOPJE | COVER & LAYOUT DESIGN</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup4')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                <ol>
+                  <li>Design: Corel Draw, Adobe InDesign</li>
+                </ol>
+                <h4>Project Name</h4>
+                <p>Book About Skopje</p>
+                <h4>Job Description</h4>
+                <ul>
+                  <li>Objectives</li>
+                  <ol>
+                    <li>Cover Design</li>
+                    <li>Formatting & Typesetting</li>
+                    <li>Layout Design</li>
+                  </ol>
+                </ul>
+                <h4>Presentation</h4>
+                <img src="./img/port-4.webp" alt="">
+                <img src="./img/port-4-1.webp" alt="">
+                <img src="./img/port-4-2.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- POPUP 5 EXHIBITION BOOK -->
+        <div class="popup" id="popup5">
+          <div class="pop-title" id="pop5">
+            <div>
+              <h3>EXHIBITION BOOK | COVER & LAYOUT DESIGN</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup5')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                <ol>
+                  <li>Design: Adobe InDesign, Adobe Photoshop</li>
+                </ol>
+                <h4>Project Name</h4>
+                <p>Exhibition Book (student project)</p>
+                <h4>Job Description</h4>
+                <ul>
+                  <li>Objectives</li>
+                  <ol>
+                    <li>Cover Design</li>
+                    <li>Formatting & Typesetting</li>
+                    <li>Layout Design</li>
+                  </ol>
+                </ul>
+                <h4>Presentation</h4>
+                <img src="./img/port-5-3.webp" alt="">
+                <img src="./img/port-5-1.webp" alt="">
+                <img src="./img/port-5-2.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- POPUP 6 DAILY NOTEBOOK PLANER -->
+        <div class="popup" id="popup6">
+          <div class="pop-title" id="pop6">
+            <div>
+              <h3>DAILY NOTEBOOK PLANER | COVER, LAYOUT & ILLUSTRATION DESIGN</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup6')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                <ol>
+                  <li>Design: Adobe InDesign, Adobe Illustrator, Adobe Photoshop</li>
+                </ol>
+                <h4>Project Name</h4>
+                <p>Daily Planer (student project)</p>
+                <h4>Job Description</h4>
+                <ul>
+                  <li>Notebook that can be used for daily and weekly planing, for both work and home tasks. With separate spaces for more urgent tasks and regular ones.</li>
+                  <li>Objectives</li>
+                  <ol>
+                    <li>Design of Illustrations</li>
+                    <li>Cover Design</li>
+                    <li>Formatting & Typesetting</li>
+                    <li>Layout Design</li>
+                  </ol>
+                </ul>
+                <h4>Presentation</h4>
+                <img src="./img/port-6-1.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- POPUP 8 POSTER & MOBILE GAME DESIGN -->
+        <div class="popup" id="popup8">
+          <div class="pop-title" id="pop8">
+            <div>
+              <h3>SOCIAL MEDIA, POSTER & MOBILE GAME DESIGN | POSTER & ILLUSTRATION DESIGN</h3>
+              <img id="close" src="./img/icons/x.svg" onclick="closePopup('popup8')">
+              <div class="pop-content">
+                <h4>Tools Used:</h4>
+                <ol>
+                  <li>Design: Adobe Illustrator, Adobe Photoshop</li>
+                </ol>
+                <h4>Job Description</h4>
+                <ul>
+                  <li>Series of some of the posters and social media designs I've made over my school years and a tribute to my favorite mobile game.</li>
+                </ul>
+                <h4>Presentation</h4>
+                <img src="./img/port-11-1.webp" alt="">
+                <img src="./img/port-11-2.webp" alt="">
+                <img src="./img/port-11-3.webp" alt="">
+                <img src="./img/port-11-4.webp" alt="">
+                <img src="./img/port-11-5.webp" alt="">
+                <img src="./img/port-11-6.webp" alt="">
+                <img src="./img/port-11-7.webp" alt="">
+                <img src="./img/port-8-1.webp" alt="">
+                <img src="./img/port-8-2.webp" alt="">
+                <img src="./img/port-8-3.webp" alt="">
+                <img src="./img/port-8-4.webp" alt="">
+                <img src="./img/port-9.webp" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <span>© Sandra Radeska 2025</span>
+      <a style="display: none;" href="https://github.com/xandemon/developer-icons?tab=MIT-1-ov-files">Icons</a>
+    </footer>
+  </body>
+</html>
